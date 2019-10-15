@@ -43,14 +43,14 @@ def number_to_full_name_month (num)
 end
 
 
-# def number_to_short_month_name (num)
-#   if (num == 1)
-#     p "Jan"
-#   elsif (num == 4)
-#     p "Apr"
-#   elsif (num == 10)
-#     p "Oct"
-#   else
-#     p "Not this month"
-#   end
-# end
+def number_to_short_month_name (num)
+  if (num == 1)
+    p "Jan"
+  elsif (num == 4)
+    p "Apr"
+  elsif (num == 10)
+    p "Oct"
+  else
+    p "Not this month"
+  end
+end
