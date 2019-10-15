@@ -54,3 +54,7 @@ def number_to_short_month_name (num)
     p "Not this month"
   end
 end
+
+def volume_of_cube(num)
+  return num ** 3
+end
