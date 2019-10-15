@@ -9,10 +9,10 @@ class FunctionsTest < MiniTest::Test
   #   assert_equal( 10, return_10_result )
   # end
   #
-  def test_add()
-    add_result = add( 1, 2 )
-    assert_equal( 3, add_result )
-  end
+  # def test_add()
+  #   add_result = add( 1, 2 )
+  #   assert_equal( 3, add_result )
+  # end
   #
   # def test_subtract()
   #   subtract_result = subtract( 10, 5 )
@@ -47,20 +47,20 @@ class FunctionsTest < MiniTest::Test
   #   assert_equal( 3, add_result )
   # end
   #
-  # def test_number_to_full_name__month_1()
-  #   result = number_to_full_month_name( 1 )
-  #   assert_equal( "January", result )
-  # end
-  #
-  # def test_number_to_full_name__month_3()
-  #   result = number_to_full_month_name( 3 )
-  #   assert_equal( "March", result )
-  # end
-  #
-  # def test_number_to_full_name__month_9()
-  #   result = number_to_full_month_name( 9 )
-  #   assert_equal( "September", result )
-  # end
+  def test_number_to_full_name__month_1()
+    result = number_to_full_name_month( 1 )
+    assert_equal( "January", result )
+  end
+  
+  def test_number_to_full_name__month_3()
+    result = number_to_full_month_name( 3 )
+    assert_equal( "March", result )
+  end
+
+  def test_number_to_full_name__month_9()
+    result = number_to_full_month_name( 9 )
+    assert_equal( "September", result )
+  end
   #
   # def test_number_to_short_month_name__month_1()
   #   first_month_string = number_to_short_month_name( 1 )
@@ -71,7 +71,7 @@ class FunctionsTest < MiniTest::Test
   #   fourth_month_string = number_to_short_month_name( 4 )
   #   assert_equal( "Apr", fourth_month_string )
   # end
-  #
+  # #
   # def test_number_to_short_month_name__month_10()
   #   tenth_month_string = number_to_short_month_name( 10 )
   #   assert_equal( "Oct", tenth_month_string )
