@@ -25,3 +25,7 @@ end
 def test_join_string (string_1, string_2)
   return string_1 + string_2
 end
+
+def add_string_as_number (strin_1, string_2)
+  return string_1.to_i() + string_2.to_i()
+end
